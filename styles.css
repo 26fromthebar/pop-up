@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(290, 10%, 80%);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.open-pop-up-btn {
+  display: block;
+  margin: 10em auto 5em;
+  cursor: pointer;
+  padding: 0.5em 1.5em;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 40%;
+  max-width: 600px;
+
+  padding: 1em;
+  background-color: aliceblue;
+  border: 2px solid #000;
+  border-radius: 5px;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.5s;
+}
+
+.pop-up-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+
+  border-bottom: 2px dotted #000;
+}
+
+.pop-up-body {
+}
+
+.pop-up-title {
+}
+
+.close-pop-up-btn {
+  align-self: flex-start;
+
+  background-color: transparent;
+  border: none;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pop-up-text {
+  margin-top: 1em;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+}
