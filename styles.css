@@ -82,11 +82,6 @@ body {
   margin-top: 1em;
 }
 
-.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .active {
   opacity: 1;
   visibility: visible;
